@@ -26,7 +26,11 @@ npm run dev
 
 Open up [http://localhost:5173](http://localhost:5173) and you should be ready to go!
 
-## Deploy Your Own
+## Deploy
+
+All pushes to `main` branch will trigger an automatic production deployment.
+
+### Deploy Your Own
 
 You can deploy your own version using the [Vercel CLI](https://vercel.com/docs/cli):
 
