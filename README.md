@@ -1,27 +1,16 @@
-# Remix
+# Node Spec Tools
 
-This directory is a brief example of a [Remix](https://remix.run/docs) site that can be deployed to Vercel with zero configuration.
+Tools to create, update, and verify Node Specs for [NiceNode](https://nicenode.xyz)
 
-To get started, run the Remix cli with this template
+Live at [tools.nicenode.xyz](https://tools.nicenode.xyz)
+
+## Development
+
+Created with [Vercel's template](https://vercel.com/docs/frameworks/remix) for [Remix.run](https://remix.run)
 
 ```sh
 npx create-remix@latest --template vercel/vercel/examples/remix
 ```
-
-## Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/remix&template=remix)
-
-_Live Example: https://remix-run-template.vercel.app_
-
-You can also deploy using the [Vercel CLI](https://vercel.com/docs/cli):
-
-```sh
-npm i -g vercel
-vercel
-```
-
-## Development
 
 To run your Remix app locally, make sure your project's local dependencies are installed:
 
@@ -36,3 +25,15 @@ npm run dev
 ```
 
 Open up [http://localhost:5173](http://localhost:5173) and you should be ready to go!
+
+## Deploy Your Own
+
+You can deploy your own version using the [Vercel CLI](https://vercel.com/docs/cli):
+
+```sh
+npm i -g vercel
+vercel
+```
+
+## Tools
+The raw json diff is computed using [jsdiff](https://github.com/kpdecker/jsdiff)

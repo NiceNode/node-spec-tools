@@ -1,5 +1,5 @@
 {
-  "name": "node-specs-tools",
+  "name": "node-spec-tools",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -14,13 +14,16 @@
     "@remix-run/server-runtime": "^2.8.0",
     "@vercel/analytics": "^1.2.2",
     "@vercel/remix": "^2.8.0",
+    "diff": "^5.2.0",
     "isbot": "^4",
+    "json-diff-kit": "^1.0.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.8.0",
     "@remix-run/eslint-config": "^2.8.0",
+    "@types/diff": "^5.0.9",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.38.0",
