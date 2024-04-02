@@ -1,3 +1,9 @@
+export function assert(condition: boolean, message: string): asserts condition {
+  if (!condition) {
+    throw new Error(message);
+  }
+}
+
 export const gethv1 = {
     "specId": "geth",
     "version": "1.0.0",
