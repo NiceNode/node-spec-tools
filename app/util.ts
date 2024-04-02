@@ -4,6 +4,13 @@ export function assert(condition: boolean, message: string): asserts condition {
   }
 }
 
+/**
+ * Simple json.stringify comparison of two objects
+ */
+export function compareObjects(obj1: any, obj2: any) {
+  return (JSON.stringify(obj1) === JSON.stringify(obj2));
+}
+
 export const gethv1 = {
     "specId": "geth",
     "version": "1.0.0",
