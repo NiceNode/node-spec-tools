@@ -15,7 +15,7 @@ export const calcUserSpecDiff = (oldSpec: NodeSpecification, newSpec: NodeSpecif
     assert(oldSpec.version < newSpec.version, "newSpec version is not greater than oldSpec version");
 
     const diffs: UserSpecDiff[] = [];
-    diffs.push({ message: `Cartridge version: ${oldSpec.version} -> ${newSpec.version}`})
+    diffs.push({ message: `Controller version: ${oldSpec.version} -> ${newSpec.version}`})
     if(oldSpec.displayName !== newSpec.displayName) {
         diffs.push({ message: `Name: ${oldSpec.displayName} -> ${newSpec.displayName}`})
     }
@@ -28,7 +28,7 @@ export const calcUserSpecDiff = (oldSpec: NodeSpecification, newSpec: NodeSpecif
         diffs.push({ message: `Download URL: ${oldSpecExecution.imageName} -> ${newSpecExecution.imageName}`})
     }
     if(oldSpecExecution.defaultImageTag !== newSpecExecution.defaultImageTag) {
-        diffs.push({ message: `Version: ${oldSpecExecution.defaultImageTag} -> ${newSpecExecution.defaultImageTag}`})
+        diffs.push({ message: `${newSpec.displayName} Version: ${oldSpecExecution.defaultImageTag} -> ${newSpecExecution.defaultImageTag}`})
     }
     /////// [end] Execution
 
