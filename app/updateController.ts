@@ -1,5 +1,4 @@
-import type { DockerExecution, NodeSpecification } from "./lib/nodeSpec";
-import { assert, compareObjects } from "./util";
+import type { NodeSpecification } from "./lib/nodeSpec";
 import type { SelectControl, SelectTranslation } from './lib/nodeConfig';
 
 export type ConfigValuesMap = Record<string, string | string[]>;
